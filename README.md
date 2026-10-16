@@ -1,26 +1,63 @@
-# kol-chen · קול-חן
+<div dir="rtl">
 
-<img src="docs/app-icon.png" width="144" alt="kol-chen cassette icon">
+<p align="center">
+  <img src="docs/app-icon.png" width="112" alt="האייקון של קול-חן, קסטה כהה">
+</p>
 
-A small native macOS app for recording the sound playing on your computer while you keep listening. Built with SwiftUI and Core Audio, with a dark cassette interface.
+<h1 align="center">קול-חן</h1>
+<p align="center"><strong>להקליט את מה שמתנגן. להמשיך להקשיב.</strong></p>
+<p align="center">אפליקציית מק קטנה, עם קסטה כהה וקצת געגוע.</p>
 
-אפליקציית מק קטנה להקלטת השמע שמתנגן במחשב, בלי להפסיק להאזין.
+[English](README.en.md) · [קוד המקור](Sources) · [תיעוד המדיה](docs/media/README.md)
 
-## Features
+יש אתר שמנגן משהו שרוצים לשמור. קול-חן מקליטה את השמע שיוצא מהמחשב, בזמן שממשיכים לשמוע אותו ברמקולים או באוזניות הרגילים. לוחצים על האדום, מקשיבים, עוצרים. ההקלטה נשמרת במחשב.
 
-- Capture website and application audio to stereo AAC `.m4a` files.
-- Keep playback on your usual speakers or headphones. No virtual audio device is required.
-- Configure separate global keyboard shortcuts for starting and stopping.
-- Watch the cassette reels rotate while recording, with real stereo level meters.
-- Choose a save folder, play the last take, and open saved recordings in Finder.
-- Continue recording with the window closed, using the menu bar controls.
-- Record locally; no uploads, account, microphone access, or network service.
+<p align="center">
+  <img src="docs/media/app-recording.png" width="680" alt="קול-חן בזמן הקלטה, עם קסטה כהה, מדדי שמע פעילים וכפתור עצירה">
+</p>
 
-The recorder captures all system playback, so sounds from other apps can be included. Protected media may prevent capture.
+## הקסטה בפעולה
 
-## Build and run
+זה צילום מסך בווידאו של אפליקציית המק עצמה: הגלגלים מסתובבים בזמן הקלטה, מדדי הסטריאו מגיבים לשמע, והכפתור האדום הופך לכפתור עצירה. הסרטון שקט.
 
-Requires an Apple Silicon Mac, macOS 15 or later, and Xcode with Swift 6.
+https://github.com/user-attachments/assets/c4abd075-f6b7-49cd-a890-3d8fd22db60b
+
+[קובץ הווידאו](docs/media/app-demo.mp4) · [תצוגת GIF](docs/media/app-demo.gif)
+
+| מוכנה | מקליטה | נשמרה |
+| --- | --- | --- |
+| ![מוכנה להקלטה](docs/media/app-idle.png) | ![הקלטה פעילה](docs/media/app-recording.png) | ![ההקלטה נשמרה](docs/media/app-saved.png) |
+
+## מה יש בפנים
+
+- הקלטת שמע מאתרים ומאפליקציות לקובץ סטריאו מסוג AAC, בסיומת `.m4a`.
+- המשך האזנה בפלט השמע הרגיל, בלי להתקין התקן שמע וירטואלי.
+- קיצורי מקלדת נפרדים להתחלה ולעצירה, גם כשעובדים באפליקציה אחרת.
+- מדדי שמע אמיתיים וגלגלי קסטה שמסתובבים בזמן הקלטה. האנימציה מכבדת את הגדרת Reduce Motion של המק.
+- בחירת תיקיית שמירה, האזנה להקלטה האחרונה ופתיחת ההקלטות ב־Finder.
+- שליטה משורת התפריטים והמשך הקלטה כשהחלון סגור.
+
+ההקלטה תופסת את כלל השמע שמתנגן במחשב, כולל צלילים מאפליקציות אחרות. נגנים עם הגנת תוכן עשויים למנוע הקלטה.
+
+## לפתוח מתנה
+
+גם ההגעה לאפליקציה יכולה להיות רגע קטן ונעים: עטיפת נייר, קריעה, קופסה והקדשה בכתב יד.
+
+https://github.com/user-attachments/assets/f7499958-7894-4a36-928b-a376c98be255
+
+**זהו קונספט עיצובי לפתיחת מתנה.** הקטע מגיע מניסוי קודם למתקין Windows ומציג את פתיחת העטיפה בלבד. הוא עדיין אינו מחובר למתקין מק. דרך ההתקנה הזמינה כרגע מתועדת בהמשך.
+
+| עטופה | נפתחת | בפנים |
+| --- | --- | --- |
+| ![חבילת המתנה עטופה בנייר](docs/media/gift-wrapped.png) | ![קריעת נייר העטיפה](docs/media/gift-tearing.png) | ![הקופסה וההקדשה אחרי פתיחת העטיפה](docs/media/gift-opened.png) |
+
+[וידאו פתיחת המתנה](docs/media/gift-opening-preview.mp4) · [תצוגת GIF](docs/media/gift-opening-preview.gif)
+
+## בנייה ופתיחה במק
+
+נדרשים מק עם Apple Silicon, מערכת macOS 15 ומעלה ו־Xcode עם Swift 6.
+
+<div dir="ltr">
 
 ```sh
 git clone https://github.com/seffyfisher/kol-chen.git
@@ -29,60 +66,60 @@ zsh build.sh
 open build/kol-chen.app
 ```
 
-The script creates a locally signed app. It does not notarize or install it.
+</div>
 
-1. Open the app and click the red record button.
-2. Allow system audio recording when macOS requests it.
-3. Play audio on a website or in another app.
-4. Click the square stop icon to finish and save the recording.
+הסקריפט יוצר אפליקציה חתומה מקומית בתיקיית `build`. אפשר להעתיק אותה לתיקיית Applications. זו גרסת בנייה מהמקור, ללא חבילת DMG מאומתת ב־notarization או מתקין המתנה שמוצג למעלה.
 
-If needed, check **System Settings → Privacy & Security → Screen & System Audio Recording** for **קול-חן**, then reopen the app.
+1. פותחים את קול-חן ולוחצים על כפתור ההקלטה האדום.
+2. מאשרים הקלטת שמע מערכת כש־macOS מבקשת.
+3. מנגנים את השמע באתר או באפליקציה הרצויים.
+4. לוחצים על הריבוע האדום לעצירה ולשמירה.
 
-Recordings default to `~/Music/kol-chen`. The gear button opens settings for the save folder and shortcuts.
+אם חסרה הרשאה, פותחים **System Settings → Privacy & Security → Screen & System Audio Recording**, מאשרים את **קול-חן** ופותחים אותה מחדש.
 
-## Keyboard shortcuts
+ברירת המחדל לשמירה היא `~/Music/kol-chen`. כפתור גלגל השיניים פותח את בחירת התיקייה והקיצורים.
 
-| Action | Default |
+## הקיצורים שלכם
+
+| פעולה | ברירת מחדל |
 | --- | --- |
-| Start recording | Control–Option–Command–R |
-| Stop and save | Control–Option–Command–S |
+| התחלת הקלטה | Control–Option–Command–R |
+| עצירה ושמירה | Control–Option–Command–S |
 
-Change either combination in Settings. Shortcuts work while other apps are active and persist between launches. No Accessibility or Input Monitoring permission is needed.
+אפשר להחליף כל צירוף בהגדרות. הקיצורים נשמרים בין הפעלות, ופועלים גם כשהאפליקציה ברקע. אין צורך בהרשאת Accessibility או Input Monitoring.
 
-## Validation
+<p align="center">
+  <img src="docs/media/settings.png" width="460" alt="הגדרות קול-חן: בחירת תיקיית הקלטות וקיצורי התחלה ועצירה">
+</p>
+
+## פרטיות ופונט
+
+ההקלטה והעיבוד נעשים מקומית. האפליקציה אינה מקליטה את המיקרופון, אינה מעלה את ההקלטות לשרת ואינה דורשת חשבון.
+
+**קיבלתי מבן נתן אישור נקודתי לשימוש בפונט פופר, לצורכי הדגמה בבלוג שלי בלבד.** קובצי הפונט והלוגו הפרטי שנוצר ממנו אינם נכללים בריפו או בגרסה הציבורית. האפליקציה הציבורית, האייקון וצילומי האפליקציה בעמוד הזה משתמשים בכתב המערכת של macOS. האישור הנקודתי אינו מעניק רישיון שימוש בפונט לאחרים.
+
+## למפתחים
+
+האפליקציה כתובה ב־SwiftUI. ההקלטה משתמשת ב־Core Audio process tap, ומשאירה את פלט השמע הרגיל פעיל.
+
+<div dir="ltr">
 
 ```sh
 zsh test.sh
 ```
 
-The checks exercise stereo encoding at 44.1/48 kHz with planar/interleaved input, safe file finalization, reel timing, hotkey registration and dispatch, conflicts, and shortcut persistence. Physical keyboard presses and real audio routes still need a manual check.
+</div>
 
-The recording engine was also tested on a Mac with built-in speakers: a tone played in Safari was captured through the installed app and the saved stereo file was independently decoded to verify actual audio. Output switching from a multi-output device to the built-in speakers was checked separately. These are local observations, not a claim about every audio device or protected player.
+הבדיקות מכסות קידוד סטריאו ב־44.1/48 kHz, סגירת קבצים תקינה, תנועת הגלגלים, רישום קיצורים ושמירתם. נבדקה גם הקלטה אמיתית מ־Safari ברמקולים המובנים, כולל פענוח הקובץ שנשמר ובדיקת החלפת פלט שמע. אלו בדיקות מקומיות; התקני שמע אחרים ולחיצות פיזיות על הקיצורים דורשים בדיקה במחשב הרלוונטי.
 
-## Artwork and branding
+| קובץ | אחריות |
+| --- | --- |
+| [`KolChenApp.swift`](Sources/KolChenApp.swift) | מצב ההקלטה, מחזור חיי האפליקציה והתפריטים |
+| [`AudioRecorder.swift`](Sources/AudioRecorder.swift) | לכידת שמע וקידוד AAC ברקע |
+| [`CassetteView.swift`](Sources/CassetteView.swift) | ממשק הקסטה וההגדרות |
+| [`RecordingShortcuts.swift`](Sources/RecordingShortcuts.swift) | קיצורי מקלדת גלובליים |
+| [`ReelMotion.swift`](Sources/ReelMotion.swift) | תנועת הגלגלים לפי מצב ההקלטה |
 
-The public app and icon use native system lettering. Private trial-font wordmarks, font binaries, personal recordings, and local settings are excluded.
+למיתוג מקומי משלכם, ראו [הנחיות המיתוג](docs/branding.md). פרטי יצירת הסרטונים והתמונות נמצאים ב[תיעוד המדיה](docs/media/README.md).
 
-To use your own appropriately licensed branding locally, add `Resources/kol-chen-logo.pdf` before building. That optional file is ignored by Git. `MakeWordmark.swift` can turn a font you are licensed to use into vector artwork:
-
-```sh
-xcrun swift MakeWordmark.swift /path/to/licensed-font.otf Resources
-```
-
-To regenerate the cassette app icon:
-
-```sh
-mkdir -p build
-xcrun swift MakeIcon.swift build/kol-chen.iconset
-iconutil -c icns build/kol-chen.iconset -o AppIcon.icns
-```
-
-## Source map
-
-- `Sources/KolChenApp.swift`: app lifecycle, recording state, and menus.
-- `Sources/AudioRecorder.swift`: native process tap and asynchronous AAC writer.
-- `Sources/CassetteView.swift`: cassette interface and settings.
-- `Sources/RecordingShortcuts.swift`: configurable global hotkeys.
-- `Sources/ReelMotion.swift`: recording-driven reel rotation.
-
-The capture path follows Apple's [Core Audio taps API](https://developer.apple.com/documentation/coreaudio/capturing-system-audio-with-core-audio-taps). The private capture device is never selected as the system output.
+</div>
