@@ -1,0 +1,16 @@
+.DS_Store
+.env*
+build/
+*.app/
+*.dSYM/
+*.zip
+*.m4a
+*.wav
+*.aiff
+*.caf
+*.mp3
+*.otf
+*.ttf
+*.woff*
+Resources/kol-chen-logo.pdf
+PrivateBranding/
