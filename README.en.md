@@ -12,7 +12,7 @@ A website plays something you want to keep. Press the red button, keep listening
 
 <img src="docs/media/app-recording.png" width="680" alt="The running Mac app recording system audio with active stereo meters">
 
-> The app screenshots and video show Popper from my installed version, with specific permission from Ben Natan for demonstrations on my blog only. The font is not included in this repository; the public build uses system lettering.
+> The app screenshots and video show Popper from my installed version, with specific permission from Ben Natan for demonstrations on my blog and in this public repository’s demo media. The font is not included in this repository; the public build uses system lettering.
 
 ## The cassette in motion
 

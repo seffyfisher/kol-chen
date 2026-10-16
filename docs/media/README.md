@@ -11,7 +11,7 @@ These assets document two different things: the running Mac audio recorder and a
 
 Captured on 2026-10-16. A generated tone drove the real recorder and meters. The recording itself is not included. Frames retain their capture timing; encoding repeats frames to provide a standard frame rate. The app has not been reconstructed or animated for this video.
 
-The app screenshots and video show the installed version with the Popper wordmark. Ben Natan granted the author specific permission for demonstrations on his blog only. This is demonstration imagery: font binaries and the vector wordmark are not distributed. The source build and executable app icon in this repository continue to use macOS system lettering.
+The app screenshots and video show the installed version with the Popper wordmark. Ben Natan granted the author specific permission for demonstrations on his blog and in this public repository’s demo media. This is demonstration imagery: font binaries and the vector wordmark are not distributed. The source build and executable app icon in this repository continue to use macOS system lettering.
 
 ## Gift design prototype
 

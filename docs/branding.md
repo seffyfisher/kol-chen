@@ -17,4 +17,4 @@ iconutil -c icns build/kol-chen.iconset -o AppIcon.icns
 zsh build.sh
 ```
 
-Ben Natan granted the author specific permission to use Popper only for demonstrations on his blog. That permission is not a font license for other users or for redistribution. No Popper font binary or private Popper wordmark is distributed here.
+Ben Natan granted the author specific permission to show Popper in demonstrations on his blog and in this public repository’s demo media. That permission is not a font license for other users or for redistribution. No Popper font binary or private Popper wordmark is distributed here.
