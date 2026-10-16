@@ -27,11 +27,11 @@ There is currently no native Mac gift installer or notarized DMG in this reposit
 
 ## Repository and inline copies
 
-The README uses GitHub attachment URLs for inline video players. Local MP4 and GIF versions are retained here as fallbacks:
+The Mac app demo uses an embedded GIF preview linked to its MP4. The gift preview also uses a GitHub attachment for an inline player. Both MP4 and GIF versions are retained in this folder:
 
-| Clip | GitHub attachment |
+| Clip | Video |
 | --- | --- |
-| Running Mac app | https://github.com/user-attachments/assets/ce37880f-35e6-45d2-be02-e71dcef6f7ad |
+| Running Mac app | [MP4](app-demo.mp4) · [GIF](app-demo.gif) |
 | Gift design preview | https://github.com/user-attachments/assets/f7499958-7894-4a36-928b-a376c98be255 |
 
 Both MP4s are silent. No personal recordings, credentials, font binaries or vector wordmark files, or original singer reference photographs are included.

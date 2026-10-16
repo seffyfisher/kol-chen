@@ -18,7 +18,7 @@ A website plays something you want to keep. Press the red button, keep listening
 
 This is an actual screen capture of my installed macOS app. The reels turn during recording, stereo meters follow the audio, and the record button becomes a stop square. The clip is silent.
 
-https://github.com/user-attachments/assets/ce37880f-35e6-45d2-be02-e71dcef6f7ad
+[![The cassette in motion with Popper](docs/media/app-demo.gif)](docs/media/app-demo.mp4)
 
 [MP4](docs/media/app-demo.mp4) · [Animated GIF](docs/media/app-demo.gif)
 
