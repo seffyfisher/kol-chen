@@ -12,11 +12,13 @@ A website plays something you want to keep. Press the red button, keep listening
 
 <img src="docs/media/app-recording.png" width="680" alt="The running Mac app recording system audio with active stereo meters">
 
+> The app screenshots and video show Popper from my installed version, with specific permission from Ben Natan for demonstrations on my blog only. The font is not included in this repository; the public build uses system lettering.
+
 ## The cassette in motion
 
-This is an actual screen capture of the public macOS app. The reels turn during recording, stereo meters follow the audio, and the record button becomes a stop square. The clip is silent.
+This is an actual screen capture of my installed macOS app. The reels turn during recording, stereo meters follow the audio, and the record button becomes a stop square. The clip is silent.
 
-https://github.com/user-attachments/assets/c4abd075-f6b7-49cd-a890-3d8fd22db60b
+https://github.com/user-attachments/assets/ce37880f-35e6-45d2-be02-e71dcef6f7ad
 
 [MP4](docs/media/app-demo.mp4) · [Animated GIF](docs/media/app-demo.gif)
 
@@ -82,11 +84,9 @@ Both combinations are configurable, persist between launches, and work while oth
 
 <img src="docs/media/settings.png" width="460" alt="Settings with save-folder selection and configurable start and stop shortcuts">
 
-## Privacy and typography
+## Privacy
 
 Recording and processing happen locally. The app does not capture the microphone, upload recordings, or require an account.
-
-**Ben Natan granted me specific permission to use Popper solely for demonstrations on my blog.** Font files and the private wordmark are not included in this repository or the public app. The public build, icon, and app captures on this page use macOS system lettering. This limited permission does not grant others a font license.
 
 ## Development
 

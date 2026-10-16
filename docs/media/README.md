@@ -4,14 +4,14 @@ These assets document two different things: the running Mac audio recorder and a
 
 ## Native Mac app
 
-- `app-idle.png`, `app-recording.png`, `app-saved.png`: actual public app states.
+- `app-idle.png`, `app-recording.png`, `app-saved.png`: actual states of the author's installed app.
 - `settings.png`: actual settings, with default shortcuts and a temporary demo output folder.
-- `app-demo.mp4`: actual sequential native-window captures, about 6 seconds, 1080 × 860, H.264, no audio track.
+- `app-demo.mp4`: actual sequential native-window captures, about 6.5 seconds, 1080 × 860, H.264, no audio track.
 - `app-demo.gif`: smaller animated preview of the same captures.
 
 Captured on 2026-10-16. A generated tone drove the real recorder and meters. The recording itself is not included. Frames retain their capture timing; encoding repeats frames to provide a standard frame rate. The app has not been reconstructed or animated for this video.
 
-The public app, its icon, and these app captures use macOS system lettering. No private trial-font wordmark or font file is included.
+The app screenshots and video show the installed version with the Popper wordmark. Ben Natan granted the author specific permission for demonstrations on his blog only. This is demonstration imagery: font binaries and the vector wordmark are not distributed. The source build and executable app icon in this repository continue to use macOS system lettering.
 
 ## Gift design prototype
 
@@ -31,7 +31,7 @@ The README uses GitHub attachment URLs for inline video players. Local MP4 and G
 
 | Clip | GitHub attachment |
 | --- | --- |
-| Running Mac app | https://github.com/user-attachments/assets/c4abd075-f6b7-49cd-a890-3d8fd22db60b |
+| Running Mac app | https://github.com/user-attachments/assets/ce37880f-35e6-45d2-be02-e71dcef6f7ad |
 | Gift design preview | https://github.com/user-attachments/assets/f7499958-7894-4a36-928b-a376c98be255 |
 
-Both MP4s are silent. No personal recordings, credentials, private font assets, or original singer reference photographs are included.
+Both MP4s are silent. No personal recordings, credentials, font binaries or vector wordmark files, or original singer reference photographs are included.
